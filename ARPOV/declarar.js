@@ -118,7 +118,6 @@ jQuery(function($) {
               { obtentores: 'VETAGRO S.R.L. Y MARIA S.R.L. U.T.E.', value: "VETAGRO S.R.L. Y MARIA S.R.L. U.T.E.: VERANO 23 SOJA", name: "VERANO 23 SOJA" },
               { obtentores: 'VETAGRO S.R.L. Y MARIA S.R.L. U.T.E.', value: "VETAGRO S.R.L. Y MARIA S.R.L. U.T.E.: VERANO 22 SOJA", name: "VERANO 22 SOJA" },
               
-              
 
               
               
