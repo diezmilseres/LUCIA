@@ -1,0 +1,194 @@
+<script>
+jQuery(function($) {
+    
+
+    $(window).load(function() {
+
+      
+      function provincias(element) {
+        jQuery(element).selectize({
+            options: [
+              { value: "Ciudad Autónoma de Buenos Aires", name: "Ciudad Autónoma de Buenos Aires" },
+              { value: "Buenos Aires", name: "Buenos Aires" },
+              { value: "Catamarca", name: "Catamarca" },
+              { value: "Córdoba", name: "Córdoba" },
+              { value: "Corrientes", name: "Corrientes" },
+              { value: "Chaco", name: "Chaco" },
+              { value: "Chubut", name: "Chubut" },
+              { value: "Entre Ríos", name: "Entre Ríos" },
+              { value: "Formosa", name: "Formosa" },
+              { value: "Jujuy", name: "Jujuy" },
+              { value: "La Pampa", name: "La Pampa" },
+              { value: "La Rioja", name: "La Rioja" },
+              { value: "Mendoza", name: "Mendoza" },
+              { value: "Misiones", name: "Misiones" },
+              { value: "Neuquén", name: "Neuquén" },
+              { value: "Rio Negro", name: "Rio Negro" },
+              { value: "Salta", name: "Salta" },
+              { value: "San Juan", name: "San Juan" },
+              { value: "San Luis", name: "San Luis" },
+              { value: "Santa Cruz", name: "Santa Cruz" },
+              { value: "Santa Fe", name: "Santa Fe" },
+              { value: "Santiago del Estero", name: "Santiago del Estero" },
+              { value: "Tierra del Fuego", name: "Tierra del Fuego" },
+              { value: "Tucumán", name: "Tucumán" },   
+              
+              
+            ],
+            placeholder: 'Seleccionar provincia ...',
+            labelField: 'name',
+            searchField: ['name'],
+            sortField: 'name'
+          });
+      }
+
+      
+      function obtentores(element) {
+        jQuery(element).selectize({
+            options: [
+              { obtentores: 'ACEITERA GENERAL DEHEZA S.A.', value: "ACEITERA GENERAL DEHEZA S.A.: VERANO 23	SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'ACEITERA GENERAL DEHEZA S.A.', value: "ACEITERA GENERAL DEHEZA S.A.: VERANO 22	SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'ACOPIO AREQUITO SOCIEDAD ANONIMA', value: "ACOPIO AREQUITO SOCIEDAD ANONIMA: INVIERNO 23	CEBADA", name: "Invierno 23 Cebada" },
+              { obtentores: 'ACOPIO AREQUITO SOCIEDAD ANONIMA', value: "ACOPIO AREQUITO SOCIEDAD ANONIMA: INVIERNO 22	CEBADA", name: "Invierno 22 Cebada" },
+              { obtentores: 'AGRISEED SA', value: "ACOPIO AGRISEED SA: VERANO 23	SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'AGRISEED SA', value: "ACOPIO AGRISEED SA: VERANO 22	SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'AGRISEED SA', value: "ACOPIO AGRISEED SA: INVIERNO 23	TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'AGRISEED SA', value: "ACOPIO AGRISEED SA: INVIERNO 22	TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'ALBERTO L MARCHIONNI SA', value: "ACOPIO ALBERTO L MARCHIONNI SA: VERANO 23	SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'ARVES SEMILLAS', value: "ACOPIO ARVES SEMILLAS: INVIERNO 23 ARVEJA", name: "Invierno 23 Arveja" },
+              { obtentores: 'ARVES SEMILLAS', value: "ACOPIO ARVES SEMILLAS: INVIERNO 22 ARVEJA", name: "Invierno 23 Arveja" },
+              { obtentores: 'ASOCIACION COOPERADORA DE LA CHACRA EXPERIMENTAL DE BARROW', value: "ACOPIO ASOCIACION COOPERADORA DE LA CHACRA EXPERIMENTAL DE BARROW: INVIERNO 23 AVENA", name: "Invierno 23 Avena" },
+              { obtentores: 'ASOCIACION COOPERADORA DE LA CHACRA EXPERIMENTAL DE BARROW', value: "ACOPIO ASOCIACION COOPERADORA DE LA CHACRA EXPERIMENTAL DE BARROW: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'ASOCIACION COOPERADORA DE LA CHACRA EXPERIMENTAL DE BARROW', value: "ACOPIO ASOCIACION COOPERADORA DE LA CHACRA EXPERIMENTAL DE BARROW: INVIERNO 22 AVENA", name: "Invierno 22 Avena" },
+              { obtentores: 'ASOCIACION COOPERADORA DE LA CHACRA EXPERIMENTAL DE BARROW', value: "ACOPIO ASOCIACION COOPERADORA DE LA CHACRA EXPERIMENTAL DE BARROW: INVIERNO 22 TRIGO", name: "Invierno 22 Trigo" },
+              { obtentores: 'ASOCIACION DE COOPERATIVAS ARGENTINAS COOP. LTDA.', value: "ASOCIACION DE COOPERATIVAS ARGENTINAS COOP. LTDA.: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'ASOCIACION DE COOPERATIVAS ARGENTINAS COOP. LTDA.', value: "ASOCIACION DE COOPERATIVAS ARGENTINAS COOP. LTDA.: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'ASOCIACION DE COOPERATIVAS ARGENTINAS COOP. LTDA.', value: "ASOCIACION DE COOPERATIVAS ARGENTINAS COOP. LTDA.: INVIERNO 23 CEBADA", name: "Invierno 23 Cebada" },
+              { obtentores: 'ASOCIACION DE COOPERATIVAS ARGENTINAS COOP. LTDA.', value: "ASOCIACION DE COOPERATIVAS ARGENTINAS COOP. LTDA.: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'ASOCIACION DE COOPERATIVAS ARGENTINAS COOP. LTDA.', value: "ASOCIACION DE COOPERATIVAS ARGENTINAS COOP. LTDA.: INVIERNO 22 CEBADA", name: "Invierno 22 Cebada" },
+              { obtentores: 'ASOCIACION DE COOPERATIVAS ARGENTINAS COOP. LTDA.', value: "ASOCIACION DE COOPERATIVAS ARGENTINAS COOP. LTDA.: INVIERNO 22 TRIGO", name: "Invierno 22 Trigo"},
+              { obtentores: 'DON MARIO SEMILLAS', value: "DON MARIO SEMILLAS: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'DON MARIO SEMILLAS', value: "DON MARIO SEMILLAS: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'DON MARIO SEMILLAS', value: "DON MARIO SEMILLAS: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'DON MARIO SEMILLAS', value: "DON MARIO SEMILLAS: INVIERNO 22 TRIGO", name: "Invierno 22 Trigo" },
+              { obtentores: 'AZCUE - CASTRO AGRONOMIA S.R.L.', value: "AZCUE - CASTRO AGRONOMIA S.R.L.: INVIERNO 23 AVENA", name: "Invierno 23 Avena" },
+              { obtentores: 'AZCUE - CASTRO AGRONOMIA S.R.L.', value: "AZCUE - CASTRO AGRONOMIA S.R.L.: INVIERNO 22 AVENA", name: "Invierno 22 Avena" },
+              { obtentores: 'BASF ARGENTINA S.A.', value: "BASF ARGENTINA S.A.: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'BASF ARGENTINA S.A.', value: "BASF ARGENTINA S.A.: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'BIOCERES SEMILLAS SAU', value: "BIOCERES SEMILLAS SAU: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'BIOCERES SEMILLAS SAU', value: "BIOCERES SEMILLAS SAU: VERANO 22 SOJA", name: "Verano 22 Soja"},
+              { obtentores: 'BIOCERES SEMILLAS SAU', value: "BIOCERES SEMILLAS SAU: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo"  },
+              { obtentores: 'BIOCERES SEMILLAS SAU', value: "BIOCERES SEMILLAS SAU: INVIERNO 22 TRIGO", name: "Invierno 22 Trigo"},
+              { obtentores: 'BIOSEMINIS S.A.', value: "BIOSEMINIS S.A.: INVIERNO 23 ARVEJA", name: "Invierno 23 Arveja" },
+              { obtentores: 'BIOSEMINIS S.A.', value: "BIOSEMINIS S.A.: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'BIOSEMINIS S.A.', value: "BIOSEMINIS S.A.: INVIERNO 22 ARVEJA", name: "Invierno 22 Arveja" },
+              { obtentores: 'BIOSEMINIS S.A.', value: "BIOSEMINIS S.A.: INVIERNO 22 TRIGO", name: "Invierno 22 Trigo" },
+              { obtentores: 'BRAMBILLA LAUREANO', value: "BRAMBILLA LAUREANO: INVIERNO 23 ARVEJA", name: "Invierno 23 Arveja" },
+              { obtentores: 'BRAMBILLA LAUREANO', value: "BRAMBILLA LAUREANO: INVIERNO 22 ARVEJA", name: "Invierno 22 Arveja" },
+              { obtentores: 'BUCK SEMILLAS S.A.', value: "BUCK SEMILLAS S.A.: INVIERNO 23 CEBADA", name: "Invierno 23 Cebada" },
+              { obtentores: 'BUCK SEMILLAS S.A.', value: "BUCK SEMILLAS S.A.: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'BUCK SEMILLAS S.A.', value: "BUCK SEMILLAS S.A.: INVIERNO 22 CEBADA", name: "Invierno 22 Cebada" },
+              { obtentores: 'BUCK SEMILLAS S.A.', value: "BUCK SEMILLAS S.A.: INVIERNO 22 TRIGO", name: "Invierno 22 Trigo" },
+              { obtentores: 'CERVECERIA Y MALTERIA QUILMES SAICA Y G', value: "CERVECERIA Y MALTERIA QUILMES SAICA Y G: INVIERNO 23 CEBADA", name: "Invierno 23 Cebada" },
+              { obtentores: 'CERVECERIA Y MALTERIA QUILMES SAICA Y G', value: "CERVECERIA Y MALTERIA QUILMES SAICA Y G: INVIERNO 22 CEBADA", name: "Invierno 22 Cebada" },
+              { obtentores: 'COPRA SOCIEDAD ANONIMA', value: "COPRA SOCIEDAD ANONIMA: VERANO 23 ARROZ", name: "Verano 23 Arroz" },
+              { obtentores: 'COPRA SOCIEDAD ANONIMA', value: "COPRA SOCIEDAD ANONIMA: VERANO 22 ARROZ", name: "Verano 22 Arroz" },
+              { obtentores: 'CORTEVA', value: "CORTEVA: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'CORTEVA', value: "CORTEVA: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'CRIADERO KLEIN S.A.', value: "CRIADERO KLEIN S.A.: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'CRIADERO KLEIN S.A.', value: "CRIADERO KLEIN S.A.: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'CRIADERO KLEIN S.A.', value: "CRIADERO KLEIN S.A.: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'CRIADERO KLEIN S.A.', value: "CRIADERO KLEIN S.A.: INVIERNO 22 TRIGO", name: "Invierno 22 Trigo" },
+              { obtentores: 'CRIADERO SANTA ROSA', value: "CRIADERO SANTA ROSA: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'CRIADERO SANTA ROSA', value: "CRIADERO SANTA ROSA: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'G Y T PLUS SA', value: "G Y T PLUS SA: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'G Y T PLUS SA', value: "G Y T PLUS SA: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'G Y T PLUS SA', value: "G Y T PLUS SA: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo"},
+              { obtentores: 'G Y T PLUS SA', value: "G Y T PLUS SA: INVIERNO 22 TRIGO", name: "Invierno 22 Trigo" },
+              { obtentores: 'GENSUS S.A.', value: "GENSUS S.A.: INVIERNO 23 ALGODON", name: "Invierno 23 Algodon" },
+              { obtentores: 'GENSUS S.A.', value: "GENSUS S.A.: INVIERNO 22 ALGODON", name: "Invierno 23 Algodon" },
+              { obtentores: 'HZPC AMERICA LATINA S.A.', value: "HZPC AMERICA LATINA S.A.: VERANO 23 PAPA", name: "Verano 23 Papa" },
+              { obtentores: 'HZPC AMERICA LATINA S.A.', value: "HZPC AMERICA LATINA S.A.: VERANO 22 PAPA", name: "Verano 23 Papa" },
+              { obtentores: 'HZPC AMERICA LATINA S.A.', value: "HZPC AMERICA LATINA S.A.: INVIERNO 23 PAPA", name: "Invierno 23 Papa" },
+              { obtentores: 'HZPC AMERICA LATINA S.A.', value: "HZPC AMERICA LATINA S.A.: INVIERNO 22 PAPA", name: "Invierno 23 Papa" },
+              { obtentores: 'ILLINOIS SEMILLAS', value: "ILLINOIS SEMILLAS: VERANO 223 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'ILLINOIS SEMILLAS', value: "ILLINOIS SEMILLAS: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'ILLINOIS SEMILLAS', value: "ILLINOIS SEMILLAS: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'LDC SEMILLAS S.A.', value: "LDC SEMILLAS S.A.: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'LDC SEMILLAS S.A.', value: "LDC SEMILLAS S.A.: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'LDC SEMILLAS S.A.', value: "LDC SEMILLAS S.A.: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'LDC SEMILLAS S.A.', value: "LDC SEMILLAS S.A.: INVIERNO 22 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'LOS GROBO AGROPECUARIA SA', value: "LOS GROBO AGROPECUARIA SA: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'LOS GROBO AGROPECUARIA SA', value: "LOS GROBO AGROPECUARIA SA: INVIERNO 22 TRIGO", name: "Invierno 22 Trigo" },
+              { obtentores: 'MONSANTO ARGENTINA SRL', value: "MONSANTO ARGENTINA SRL: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'MONSANTO ARGENTINA SRL', value: "MONSANTO ARGENTINA SRL: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'NIDERA SEMILLAS', value: "NIDERA SEMILLAS: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'NIDERA SEMILLAS', value: "NIDERA SEMILLAS: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'NIDERA SEMILLAS', value: "NIDERA SEMILLAS: INVIERNO 23 CEBADA", name: "Invierno 23 Cebada" },
+              { obtentores: 'NIDERA SEMILLAS', value: "NIDERA SEMILLAS: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'NIDERA SEMILLAS', value: "NIDERA SEMILLAS: INVIERNO 22 CEBADA", name: "Invierno 22 Cebada" },
+              { obtentores: 'NIDERA SEMILLAS', value: "NIDERA SEMILLAS: INVIERNO 22 TRIGO", name: "Invierno 22 Trigo" },
+              { obtentores: 'NUTRIEN AG SOLUTIONS ARGENTINA SA', value: "NUTRIEN AG SOLUTIONS ARGENTINA SA: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'NUTRIEN AG SOLUTIONS ARGENTINA SA', value: "NUTRIEN AG SOLUTIONS ARGENTINA SA: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'PILAGA S.A.', value: "PILAGA S.A.: VERANO 23 ARROZ", name: " Verano 23 Arroz" },
+              { obtentores: 'PILAGA S.A.', value: "PILAGA S.A.: VERANO 22 ARROZ", name: " Verano 22 Arroz" },
+              { obtentores: 'PIONEER ARGENTINA SRL', value: "PIONEER ARGENTINA SRL: VERANO 23 SOJA", name: " Verano 23 Soja" },
+              { obtentores: 'PIONEER ARGENTINA SRL', value: "PIONEER ARGENTINA SRL: VERANO 22 SOJA", name: " Verano 22 Soja" },
+              { obtentores: 'RAGT ARGENTINA S.A', value: "RAGT ARGENTINA S.A: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'RAGT ARGENTINA S.A', value: "RAGT ARGENTINA S.A: INVIERNO 22 TRIGO", name: "Invierno 22 Trigo" },
+              { obtentores: 'SEEDAR S.A.', value: "SEEDAR S.A.: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'SEEDAR S.A.', value: "SEEDAR S.A.: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'SEEDAR S.A.', value: "SEEDAR S.A.: INVIERNO 23 AVENA", name: "Invierno 23 Avena" },
+              { obtentores: 'SEEDCORP HO S.A.U.', value: "SEEDCORP HO S.A.U.: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'SEEDCORP HO S.A.U.', value: "SEEDCORP HO S.A.U.: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'SEEDCORP HO S.A.U.', value: "SEEDCORP HO S.A.U.: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'SEEDCORP HO S.A.U.', value: "SEEDCORP HO S.A.U.: INVIERNO 22 TRIGO", name: "Invierno 22 Trigo" },
+              { obtentores: 'SURSEM SOCIEDAD ANONIMA', value: "SURSEM SOCIEDAD ANONIMA: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'SURSEM SOCIEDAD ANONIMA', value: "SURSEM SOCIEDAD ANONIMA: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'SURSEM SOCIEDAD ANONIMA', value: "SURSEM SOCIEDAD ANONIMA: INVIERNO 23 ARVEJA", name: "Invierno 23 Arveja" },
+              { obtentores: 'SURSEM SOCIEDAD ANONIMA', value: "SURSEM SOCIEDAD ANONIMA: INVIERNO 23 CEBADA", name: "Invierno 23 Cebada" },
+              { obtentores: 'SURSEM SOCIEDAD ANONIMA', value: "SURSEM SOCIEDAD ANONIMA: INVIERNO 23 TRIGO", name: "Invierno 23 Trigo" },
+              { obtentores: 'SURSEM SOCIEDAD ANONIMA', value: "SURSEM SOCIEDAD ANONIMA: INVIERNO 22 ARVEJA", name: "Invierno 22 Arveja" },
+              { obtentores: 'SURSEM SOCIEDAD ANONIMA', value: "SURSEM SOCIEDAD ANONIMA: INVIERNO 22 CEBADA", name: "Invierno 22 Cebada" },
+              { obtentores: 'SURSEM SOCIEDAD ANONIMA', value: "SURSEM SOCIEDAD ANONIMA: INVIERNO 22 TRIGO", name: "Invierno 22 Trigo" },
+              { obtentores: 'SYNGENTA AGRO', value: "SYNGENTA AGRO: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'SYNGENTA AGRO', value: "SYNGENTA AGRO: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'TOBIN S.R.L.', value: "TOBIN S.R.L.: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'TOBIN S.R.L.', value: "TOBIN S.R.L.: VERANO 22 SOJA", name: "Verano 22 Soja" },
+              { obtentores: 'VETAGRO S.R.L. Y MARIA S.R.L. U.T.E.', value: "VETAGRO S.R.L. Y MARIA S.R.L. U.T.E.: VERANO 23 SOJA", name: "Verano 23 Soja" },
+              { obtentores: 'VETAGRO S.R.L. Y MARIA S.R.L. U.T.E.', value: "VETAGRO S.R.L. Y MARIA S.R.L. U.T.E.: VERANO 22 SOJA", name: "Verano 22 Soja" }
+            ],
+            optionGroupRegister: function (optgroup) {
+              var capitalised = optgroup.charAt(0).toUpperCase() + optgroup.substring(1);
+              var group = {
+                label: 'Obtentor: ' + capitalised
+              };
+
+              group[this.settings.optgroupValueField] = optgroup;
+
+              return group;
+            },
+            placeholder: 'Haga click para seleccionar ...',
+            optgroupField: 'obtentores',
+            labelField: 'name',
+            searchField: ['name', 'obtentores'],
+            sortField: 'name'
+          });
+      }
+
+      obtentores(jQuery('.wpcf7-field-group').find("[name^='obtentor']")[0])
+      provincias(jQuery('.wpcf7-field-group').find("[name^='provincia']")[0])
+
+      jQuery('form.wpcf7-form').on('DOMNodeInserted', '.wpcf7-field-group', function (ele) {
+          obtentores(jQuery(ele.currentTarget).find("[name^='obtentor']")[0])
+          provincias(jQuery(ele.currentTarget).find("[name^='provincia']")[0])
+            
+      });
+       
+    });
+    
+
+});
+
+
+</script>
