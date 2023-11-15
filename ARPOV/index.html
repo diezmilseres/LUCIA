@@ -1,12 +1,24 @@
-jQuery(function($) {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+
+</head>
+<body>
     
+    <form action="">
+        <select name="obtentor" id="obtentor" placeholder="Ingrese su busqueda"></select>
+    </form>
 
-    $(window).load(function() {
-
-      function obtentores(element) {
-        jQuery(element).selectize({
+    <script>
+        new TomSelect('#obtentor',{
+            plugins: ['remove_button'],
             options: [
-              { obtentores: 'ACEITERA GENERAL DEHEZA S.A.', value: "ACEITERA GENERAL DEHEZA S.A.: VERANO 23	SOJA", name: "Verano 23 Soja" },
+            { obtentores: 'ACEITERA GENERAL DEHEZA S.A.', value: "ACEITERA GENERAL DEHEZA S.A.: VERANO 23	SOJA", name: "Verano 23 Soja" },
               { obtentores: 'ACEITERA GENERAL DEHEZA S.A.', value: "ACEITERA GENERAL DEHEZA S.A.: VERANO 22	SOJA", name: "Verano 22 Soja" },
               { obtentores: 'ACOPIO AREQUITO SOCIEDAD ANONIMA', value: "ACOPIO AREQUITO SOCIEDAD ANONIMA: INVIERNO 23	CEBADA", name: "Invierno 23 Cebada" },
               { obtentores: 'ACOPIO AREQUITO SOCIEDAD ANONIMA', value: "ACOPIO AREQUITO SOCIEDAD ANONIMA: INVIERNO 22	CEBADA", name: "Invierno 22 Cebada" },
@@ -118,35 +130,15 @@ jQuery(function($) {
               { obtentores: 'VETAGRO S.R.L. Y MARIA S.R.L. U.T.E.', value: "VETAGRO S.R.L. Y MARIA S.R.L. U.T.E.: VERANO 23 SOJA", name: "Verano 23 Soja" },
               { obtentores: 'VETAGRO S.R.L. Y MARIA S.R.L. U.T.E.', value: "VETAGRO S.R.L. Y MARIA S.R.L. U.T.E.: VERANO 22 SOJA", name: "Verano 22 Soja" },
             ],
-            optionGroupRegister: function (optgroup) {
-              var capitalised = optgroup.charAt(0).toUpperCase() + optgroup.substring(1);
-              var group = {
-                label: 'Obtentor: ' + capitalised
-              };
-
-              group[this.settings.optgroupValueField] = optgroup;
-
-              return group;
-            },
-            placeholder: 'Click here to select ...',
             optgroupField: 'obtentores',
             labelField: 'name',
             searchField: ['name', 'obtentores'],
-            sortField: 'name'
-          });
-      }
-
-      obtentores(jQuery('.wpcf7-field-group').find("[name^='obtentor']")[0])
-
-      jQuery('form.wpcf7-form').on('DOMNodeInserted', '.wpcf7-field-group', function (ele) {
-
-            console.log('added')
-            
-            obtentores(jQuery(ele.currentTarget).find("[name^='obtentor']")[0])
-            
-      });
-       
-    });
-    
-
-});
+            render: {
+                optgroup_header: function(data, escape) {
+                    return '<div class="optgroup-header" style="font-weight: bolder">' + escape(data.label) + ' <span class="scientific"></span></div>';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
