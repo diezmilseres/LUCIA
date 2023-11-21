@@ -1,0 +1,106 @@
+<div class="form_wrapper">
+
+    <label class="col col-1 form-group">
+        <span>CUIT </span>
+        <span>[text* cuit]</span>
+    </label>
+    
+    <label class="col col-1 form-group">
+        <span>Razon Social</span>
+        <span>[text* razon_social]</span>
+    </label>
+    
+    <label class="col col-2 form-group">
+        <span>Email</span>
+        <span>[email* your_email autocomplete:email]</span>
+    </label>
+    
+    <label class="col col-2 form-group">
+        <span>Teléfono</span>
+        <span>[tel telefono]</span>
+    </label>
+    
+    [field_group emails class="col col-1 grid" id="emails-groups" tabindex:1]
+    
+    <h3>[group_id]</h3>
+    
+    <label class="col col-1 form-group">
+        <span>Obtentor / Campaña / Cultivo</span>
+        <span>[select* obtentor data:obtentores]</span>
+    </label>
+    
+    <label class="col col-1 form-group">
+        <span>Variedad declarada</span>
+        <span>[text* variedad_declarada]</span>
+    </label>
+    
+    <label class="col col-2 form-group">
+        <span>Hectareas uso propio</span>
+        <span>[text* hectareas_propio] </span>
+    </label>
+    
+    <label class="col col-2 form-group">
+        <span>Densidad</span>
+        <span>[text* densidad] </span>
+    </label>
+    
+    <label class="col col-1 form-group">
+        <span>Provincia</span>
+        <span>[select* provincia data:obtentores] </span>
+    </label>
+    
+    [/field_group]
+    
+    <label class="col col-1 form-group">
+        <span>Comentarios </span>
+        <span>[textarea comentarios]</span>
+    </label>
+    
+    <label class="col col-1 form-group file-select">
+        <span>Documentacion de respaldo</span>
+        <span>[multilinefile documentaciones limit:15mb value="Subir documentacion de respaldo"]</span>
+    </label>
+    
+<div>
+    
+    [submit "Enviar"]
+
+
+
+
+
+    <div class="form_wrapper">
+
+        <label class="col col-1"> CUIT [text* cuit] </label>
+        
+        <label class="col col-1"> Razon Social [text* razon_social] </label>
+        
+        <label class="col col-2"> Email [email* your_email autocomplete:email] </label>
+        
+        <label class="col col-2"> Teléfono [tel telefono] </label>
+        
+        
+        
+        [field_group emails class="col col-1 grid" id="emails-groups" tabindex:1]
+        
+        <h3>[group_id]</h3>
+        
+        <label class="col col-1"> Obtentor / Campaña / Cultivo  [select* obtentor data:obtentores] </label>
+        
+        <label class="col col-1"> Variedad declarada [text* variedad_declarada] </label>
+        
+        <label class="col col-2"> Hectareas uso propio [text* hectareas_propio] </label>
+        
+        <label class="col col-2"> Densidad [text* densidad] </label>
+        
+        <label class="col col-1"> [select* provincia data:obtentores] </label>
+        
+        [/field_group]
+        
+        <label class="col col-1">Comentarios [textarea comentarios]</label>
+        
+        <label class="col col-1 file-select">[multilinefile documentaciones limit:15mb value="Subir documentacion de respaldo"]</label>
+        
+        <div>
+        
+        [submit "Enviar"]
